@@ -1,0 +1,32 @@
+.wrapper{
+    width: 970px;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+#firstBox p{
+    display: inline-block;
+    vertical-align: top;
+    background-color: lightcoral;
+}
+
+
+#firstBox{
+
+}
+
+.Box{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+#logBox{
+    border: 1px solid black;
+    width: 800px;
+    height: 200px;
+    margin-left: 40px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ninja Gold</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../static/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="firstBox" >
+                <p>Your Gold: </p>
+                <p>{{gold}}</p>
+            </div>
+            <div id="secondBox" >
+                <div class="Box">
+                    <h3>Farm</h3>
+                    <p>(earn 10-20 golds)</p>
+                    <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input type="submit" value="Find Gold!"/>
+                    </form>
+                </div>
+            </div>
+            <div id="thirdBox">
+                <p>Activities</p>
+                <div id="logBox" >
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
