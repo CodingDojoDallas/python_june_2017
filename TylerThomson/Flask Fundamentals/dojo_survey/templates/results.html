@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <h1>Submitted Info</h1>
+    <div id="resultInfo">
+        <p>Name: {{ name }}</p>
+        <p>Dojo Location: {{ location }}</p>
+        <p>Favorite Language: {{ language }}</p>
+        <p>Comment: {{ comment }}</p>
+    </div>
+    <form id"goBack" action="/" method="get">
+      <input type="submit" value="Go Back">
+    </form>
+  </body>
+</html>
