@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+<form action="/process" method="POST">
+	{% csrf_token %}
+	<label>Your Name: </label>
+	<input type="text" name="name"><br>
+
+	<label>Dojo Location: </label>
+	<select name="location">
+		<option value="San Jose">San Jose</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Tulsa">Tulsa</option>
+        <option value="Dallas">Dallas</option>
+	 </select><br><br>
+	 
+	<label>Favorite Language: </label>
+	<select name="language">
+		<option value="c++">c++</option>
+        <option value="perl">perl</option>
+        <option value="python">python</option>
+        <option value="dos">dos</option>
+	 </select><br><br>
+	 <label>Comments: </label><br>
+	 <textarea  name="comment"></textarea><br>
+
+	<input type="submit">		
+</form>
+	
+</body>
+</html>
